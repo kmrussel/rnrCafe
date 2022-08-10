@@ -22,5 +22,8 @@ def drinks():
 def aboutUs():
     return render_template("aboutUs.html")
 
+@app.route("/nav")
+def nav():
+    return render_template("nav.html")
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="localhost", port=3000,debug=True)

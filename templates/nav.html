@@ -1,11 +1,11 @@
- <header class="header">
-            <button class="header__button" id="btnNav" type="button">
-                <i class="material-icons">menu</i>
-            </button>
- </header>
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button" style="font-size:80px" onclick="navButton()">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
         <nav class="nav">
             <div class="nav__links">
-                <a href="{{url_for('aboutUs')}}" class="nav__link">
+                <a href="/" class="nav__link">
                     <i class="material-icons">home</i>
                     Home
                 </a>
@@ -19,19 +19,20 @@
                 </a>
             </div>
             <div class="nav__overlay"></div>
-        </nav>
-        <script>
-            window.addEventListener("load", () => {
-                document.body.classList.remove("preload");
-            });
+            </nav>
+            <script type="text/javascript">
+                    window.addEventListener("load", () => {
+                        document.body.classList.remove("preload");
+                    });
 
-            document.addEventListener("DOMContentLoaded", () => {
-                const nav = document.querySelector(".nav");
-                document.querySelector("#btnNav").addEventListener("click", () => {
-                    nav.classList.add("nav--open");
-                });
-                document.querySelector(".nav__overlay").addEventListener("click", () => {
-                    nav.classList.remove("nav--open");
-                });
-            });
-        </script>
+                    function navButton() {
+                        const nav = document.querySelector(".nav");
+
+                        if (nav.classList.contains("nav--open")){
+                                nav.classList.remove("nav--open");
+                        }
+                        else{
+                                nav.classList.add("nav--open");
+                        }
+                    }
+            </script>
