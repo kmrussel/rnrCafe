@@ -3,10 +3,11 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
         <link rel="stylesheet" typle= "text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
     </head>
     <body class="preload">
         {% include 'nav.html' %}
-
+        <img src="{{url_for('static', filename='/graphics/home_top.svg')}}" />
     </body>
 
 </html>

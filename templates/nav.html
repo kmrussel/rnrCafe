@@ -2,24 +2,25 @@
         <button class="header__button" id="btnNav" type="button" onclick="navButton()">
             <i class="material-icons">menu</i>
         </button>
+        <img src="{{url_for('static', filename='/graphics/logo_white_dim.svg')}}" align="middle" width="300px" height="100px" />
     </header>
         <nav class="nav">
             <div class="nav__links">
+                <button class="header__button" id="btnClose" type="button" style="color: #AA706A"onclick="navButton()">
+                    <i class="material-icons">close</i>
+                </button>
                 <a href="/" class="nav__link">
-                    <i class="material-icons">home</i>
                     Home
                 </a>
                 <a href="{{url_for('menu')}}" class="nav__link">
-                    <i class="material-icons">restaurant</i>
                     Menu
                 </a>
                 <a href="{{url_for('aboutUs')}}" class="nav__link">
-                    <i class="material-icons">favorite</i>
                     About us
                 </a>
             </div>
             <div class="nav__overlay"></div>
-            </nav>
+        </nav>
             <script type="text/javascript">
                     window.addEventListener("load", () => {
                         document.body.classList.remove("preload");
