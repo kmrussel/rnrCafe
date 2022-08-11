@@ -102,4 +102,22 @@
     transition: opacity 0.3s;
 }
 
+.info {
+    width: 100%;
+    margin:0;
+    padding: 100px 50px;
+    font-family: 'Questrial', serif;
+    text-align: center;
+    color: #282128;
+    background: #F9F6E4;
+}
 
+.info h2{
+    font-size: 50px
+    font-family: 'Mulish', serif;
+}
+
+.info p{
+    font-size: 30px;
+    padding: 30px 0;
+}

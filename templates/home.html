@@ -4,10 +4,23 @@
       rel="stylesheet">
         <link rel="stylesheet" typle= "text/css" href="{{ url_for('static',filename='styles/main.css') }}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     </head>
     <body class="preload">
         {% include 'nav.html' %}
         <img src="{{url_for('static', filename='/graphics/home_top.svg')}}" />
+        <div class="info">
+            <h2>OUR MEALS</h2>
+            <p>
+                Here at R&R we believe that every detail is important to bring our customers the finest experience.
+                Our chefs curated a select list of dishes and thoughtfully prepare every ingredient for each dish.
+                We source these ingredients locally to ensure each meal we prepare is top quality as we believe our customers deserve the best.
+            </p>
+            <p>
+                Please call use for our hours as times may vary.
+            </p>
+
+        </div>
     </body>
 
 </html>
