@@ -11,12 +11,16 @@ def menu():
     return render_template("menu.html")
 
 @app.route("/food-menu")
-def food():
+def foodMenu():
     return render_template("foodMenu.html")
 
 @app.route("/drinks-menu")
-def drinks():
+def drinksMenu():
     return render_template("drinksMenu.html")
+
+@app.route("/sides-menu")
+def sidesMenu():
+    return render_template("sidesMenu.html")
 
 @app.route("/about-us")
 def aboutUs():

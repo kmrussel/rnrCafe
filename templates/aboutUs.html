@@ -2,12 +2,53 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" typle= "text/css" href="{{ url_for('static',filename='styles/main.css') }}">
-        <title>Title</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+        <title>About Us</title>
     </head>
-    <body>
+    <body class="preload">
         {% include 'nav.html' %}
+        <img src="{{url_for('static', filename='/graphics/about_us.svg')}}" style="margin-top:20%"/>
+        <div class="info">
+            <h2>OUR STORY</h2>
+            <p>R&R Restaurant was founded in 2007 by sisters, Ashley and Katie Russell.
+            They aimed to create a restaurant that combines the feeling of hominess and fine dining by taking their family recipes to the next level?(lol).
+            With the help of their parents, R&R restaurant has become the number one place for families to gather in San Diego.
+            </p>
+            <p>In 2010, the youngest Russell, Lacey Marie, opened up a second branch which is now known as
+            R&R Cafe. R&R Cafe is an innovative brunch destination that serves a variety of unique breakfast and lunch
+                dishes as well as coffee made to order.</p>
+            <img src="{{url_for('static', filename='/graphics/divider.svg')}}" width="100%" height="50px" style="padding-top: 40px"/>
+            <h2 class="meet">MEET OUR TEAM</h2>
+            <div class="team">
+                <img src="{{url_for('static', filename='/graphics/lacey.svg')}}" />
+                <h2>owner</h2>
+                <p>Lacey Marie Russell</p>
+
+            </div>
+            <hr>
+            <div class="team">
+                <img src="{{url_for('static', filename='/graphics/ashley.svg')}}" />
+                <h2>co-founder and chef</h2>
+                <p>Ashley Russell</p>
+            </div>
+            <hr>
+            <div class="team">
+                <img src="{{url_for('static', filename='/graphics/me.svg')}}" />
+                <h2>co-founder and moral support</h2>
+                <p>Katie Russell</p>
+            </div>
+            <hr>
+            <div class="team">
+                <img src="{{url_for('static', filename='/graphics/johnny.svg')}}" />
+                <h2>barista</h2>
+                <p>Johnny Morrison</p>
+            </div>
+        </div>
     </body>
+    {% include 'footer.html' %}
+
 </html>

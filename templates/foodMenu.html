@@ -2,12 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
         <link rel="stylesheet" typle= "text/css" href="{{ url_for('static',filename='styles/main.css') }}">
-        <title>Title</title>
+        <title>Entree menu</title>
     </head>
-    <body>
+    <body class="preload">
         {% include 'nav.html' %}
+        <img src="{{url_for('static', filename='/graphics/food_header.svg')}}" style="margin-top:20%"/>
+        <div class="info">
+            <table class="menu">
+                <tbody>
+                <tr>
+                    <td>
+                       <h2 >Rise & Shine Sammie</h2>
+                        <i><p>Egg and muenster cheese sandwich with your choice of bacon and/or sausage all stacked on top of
+                            a lightly toasted english muffin</p></i>
+                    </td>
+                    <td class="price">
+                        <h2>$15</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Breakfast of Champions</h2>
+                        <i><p>All American toast or English muffin, hash browns, bacon
+                        and/or sausage with eggs made to order</p></i>
+                    </td>
+                    <td class="price">
+                        <h2>$16</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Very Berry French Toast</h2>
+                        <i><p>Blueberry mascarpone stuffed french toast made with freshly baked brioche bread and topped with
+                            fresh seasonal berries or berry compote</p></i>
+                    </td>
+                    <td class="price">
+                        <h2>$18</h2>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="ingredients">
+                Not all of the ingredients are listed on the menu if you have any dietary restrictions please let your server know.
+            </div>
+        </div>
     </body>
+    {% include 'footer.html' %}
 </html>

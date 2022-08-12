@@ -2,13 +2,97 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
         <link rel="stylesheet" typle= "text/css" href="{{ url_for('static',filename='styles/main.css') }}">
 
         <title>Title</title>
     </head>
-    <body>
+    <body class="preload">
         {% include 'nav.html' %}
+        <img src="{{url_for('static', filename='/graphics/drinks_header.svg')}}" style="margin-top:20%"/>
+          <div class="info">
+              <h1>ESPRESSO</h1>
+            <table class="menu">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Cappucino</h2>
+                            <i><p>Iced • Hot</p></i>
+                        </td>
+                        <td class="price">
+                            <h2>$5</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Latte</h2>
+                            <i><p>Iced • Hot</p></i>
+                        </td>
+                        <td class="price">
+                            <h2>$5</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <h2 >Americano</h2>
+                        </td>
+                        <td class="price">
+                            <h2>$3</h2>
+                        </td>
+                    </tr>
+                <tr>
+                </tbody>
+            </table>
+              <section class="add-ons">
+                  <h3>add ons</h3>
+                  <p>oat milk substitute $1</p>
+                  <p>syrups - vanilla, caramel, pumpkin</p>
+              </section>
+              <h1 style="padding-top: 50px;">BEVERAGES</h1>
+                    <table class="menu">
+                <tbody>
+                <tr>
+                    <td>
+                       <h2 >Orange Juice</h2>
+                    </td>
+                    <td class="price">
+                        <h2>$3</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <h2 >Orange Peach Mango Juice</h2>
+                    </td>
+                    <td class="price">
+                        <h2>$3</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Milk</h2>
+                        <i><p>whole • oat</p></i>
+                    </td>
+                    <td class="price">
+                        <h2>$3</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Tea</h2>
+                        <i><p>english breakfast • green • hibiscus</p></i>
+                    </td>
+                    <td class="price">
+                        <h2>$2</h2>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="ingredients">
+                Not all of the ingredients are listed on the menu if you have any dietary restrictions please let your server know.
+            </div>
+        </div>
     </body>
+    {% include 'footer.html' %}
 </html>

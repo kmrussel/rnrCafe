@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+        <link rel="stylesheet" typle= "text/css" href="{{ url_for('static',filename='styles/main.css') }}">
+        <title>Title</title>
+    </head>
+    <body>
+        {% include 'nav.html' %}
+        <img src="{{url_for('static', filename='/graphics/sides_header.svg')}}" style="margin-top:20%"/>
+        <div class="info">
+            <table class="menu">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Sunrise Parfait</h2>
+                            <i><p>Greek yogurt layered with seasonal berries and mixed granola topped with toasted coconut</p></i>
+                        </td>
+                        <td class="price">
+                            <h2>$5</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Candied Bacon</h2>
+                            <i><p>Smoked bacon coated in brown sugar and spices</p></i>
+                        </td>
+                        <td class="price">
+                            <h2>$6</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>English Muffin</h2>
+                            <i><p>Lightly toasted and buttered english muffin accompanied by home-made berry preserves</p></i>
+                        </td>
+                        <td class="price">
+                            <h2>$5</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Eggs</h2>
+                            <i><p>sunny side up • over easy • over hard • scrambled </p></i>
+                        </td>
+                        <td class="price">
+                            <h2>$4</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Sausage Links</h2>
+                        </td>
+                        <td class="price">
+                            <h2>$4</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Hash Browns</h2>
+                        </td>
+                        <td class="price">
+                            <h2>$4</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Avocado</h2>
+                        </td>
+                        <td class="price">
+                            <h2>$2</h2>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <div class="ingredients">
+                Not all of the ingredients are listed on the menu if you have any dietary restrictions please let your server know.
+            </div>
+        </div>
+    </body>
+    {% include 'footer.html' %}
+</html>
