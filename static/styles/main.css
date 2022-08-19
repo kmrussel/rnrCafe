@@ -6,7 +6,7 @@
 
 .body {
     margin: 10%;
-    font-size: 100px;
+    font-size: 150px;
     font-family: sans-serif;
 
 }
@@ -75,7 +75,7 @@
 
     color: #BCAFBD;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 80px;
     text-decoration: none;
     padding: 20px 0;
     background: transform 0.2s;
@@ -111,19 +111,19 @@
 
 .footer h2,
 .info h2{
-    font-size: 50px
+    font-size: 100px
     font-family: 'Mulish', serif;
 }
 
 .info p{
     margin: 0;
-    font-size: 30px;
+    font-size: 50px;
     padding: 30px 0;
 }
 
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 50px;
   width: 50px;
   text-align: center;
   text-decoration: none;
