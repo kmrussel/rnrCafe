@@ -13,8 +13,10 @@
         {% include 'nav.html' %}
         <img src="{{url_for('static', filename='/graphics/food_header.svg')}}" style="margin-top:20%"/>
         <div class="info">
-            <a href="{{url_for('drinksMenu')}}">Drinks</a>
-            <a href="{{url_for('sidesMenu')}}">Sides</a>
+            <p>
+            <button><a href="{{url_for('drinksMenu')}}">Drinks</a></button>
+            <button><a href="{{url_for('sidesMenu')}}">Sides</a></button>
+            </p>
             <table class="menu">
                 <tbody>
                 <tr>
