@@ -141,7 +141,7 @@
     color: #282128;
     font-family: 'Questrial', serif;
 }
-
+.footer h2,
 .footer h1 {
     padding-top: 50px;
     padding-bottom: 0;
@@ -150,10 +150,14 @@
     font-family: 'Mulish', serif;
 }
 
+.footer p {
+    font-size: 20px;
+}
+
 .footer h5 {
     margin-top: 0;
     padding-top: 0;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Mulish', serif;
 }
 
@@ -238,6 +242,7 @@ button a {
 
 .menu p {
     padding-top: 0;
+    font-size: 25px;
 }
 
 .menu .price {
