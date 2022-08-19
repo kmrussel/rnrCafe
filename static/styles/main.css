@@ -111,7 +111,7 @@
 
 .footer h2,
 .info h2{
-    font-size: 100px;
+    font-size: 70px;
     font-family: 'Mulish', serif;
 }
 
@@ -167,14 +167,15 @@
   background: none;
 }
 
-.fa-instagram:visited,
-.fa-facebook:visited {
+.fa-instagram,
+.fa-facebook {
   background: none;
-  color: #AA706A
+  color: #AA706A;
 }
 
 a {
     padding: 50px 0;
+    color: #AA706A;
 }
 
 a:visited {
@@ -208,7 +209,7 @@ form button {
     font-family: 'Questrial', serif;
 }
 
-p a {
+button a {
   color: #FFFFFF;
 }
 
