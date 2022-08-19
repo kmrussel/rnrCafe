@@ -223,11 +223,12 @@ form button {
     text-align: left;
     width: 800px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .menu h2 {
     padding-bottom: 5px;
+    font-size: 30px;
 }
 
 .menu p {
@@ -243,7 +244,7 @@ form button {
 .ingredients {
     padding-top: 100px;
     display: block;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .team {
