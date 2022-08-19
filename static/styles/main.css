@@ -194,6 +194,7 @@ form input {
     font-family: 'Questrial', serif;
 }
 
+p button,
 form button {
     width: 200px;
     height: 70px;
@@ -207,6 +208,9 @@ form button {
     font-family: 'Questrial', serif;
 }
 
+p a {
+  color: #FFFFFF;
+}
 
 .container {
   position: relative
