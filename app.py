@@ -29,5 +29,6 @@ def aboutUs():
 @app.route("/nav")
 def nav():
     return render_template("nav.html")
+
 if __name__ == '__main__':
     app.run(host="localhost", port=3000,debug=True)
